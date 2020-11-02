@@ -29,10 +29,10 @@ export class ListDataService {
 
   public remove(i: number): void {
     this.todoListInternal.splice(i, 1);
-    this.todoList.next(this.todoListInternal)
+    this.todoList.next(this.todoListInternal);
   }
 
   public forceReload(): void {
-    this.todoList.next(this.todoListInternal)
+    this.todoList.next(this.todoListInternal);
   }
 }
