@@ -31,4 +31,8 @@ export class ListDataService {
     this.todoListInternal.splice(i, 1);
     this.todoList.next(this.todoListInternal)
   }
+
+  public forceReload(): void {
+    this.todoList.next(this.todoListInternal)
+  }
 }
